@@ -4,7 +4,7 @@ This code accompanies the paper: "Multiplexed Nanometric 3D Tracking of Microbea
 
 This software was written in LabVIEW 2018.
 
-Use Main 'TrackingSimulation.vi' to start Lorentz Mie Scattering Theory simulations that emulate Magnetic Tweezers data.
+Use 'Main TrackingSimulation.vi' to start Lorentz Mie Scattering Theory simulations that emulate Magnetic Tweezers data.
 
 Typical intended use:
 1) Fill out 'LUT definition' and 'Ref definition' parameters that define the tracking for radial profile and Phasor tracking
