@@ -2,7 +2,7 @@
 
 This code accompanies the paper: Multiplexed Nanometric 3D Tracking of Microbeads using a FFT-Phasor Algorithm, by Brouwer, Hermans and van Noort (https://www.biorxiv.org/content/10.1101/763706v1).
 
-This code was written in LabVIEW 2018.
+This software was written in LabVIEW 2018.
 
 Use Main TrackingSimulation.vi to start Lorentz Mie Scattering Theory simulations that emulate Magnetic Tweezers data.
 
