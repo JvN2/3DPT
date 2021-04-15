@@ -4,9 +4,6 @@ import matplotlib.pyplot as plt
 import numpy as np
 from PIL import Image
 
-x = ll = 0
-y = ur = 1
-
 
 def to_corners(center, width):
     corners = [[int(c - w // 2), int(c - w // 2) + int(w)] for c, w in zip(center, width)]
@@ -14,6 +11,8 @@ def to_corners(center, width):
 
 
 def get_roi(image, corners):
+    x = ll = 0
+    y = ur = 1
     return image[corners[x][ll]:corners[x][ur], corners[y][ll]:corners[y][ur]]
 
 
@@ -36,11 +35,9 @@ def get_position(roi, fft_ref):
 
 path = Path(r'C:\Users\noort\Downloads\MTtransmission\3 um Bead - 20 nm')
 filenames = [f for f in path.rglob('*.tif')]
-roi_size = 64
+roi_size = 50
+
 fft_ref = create_ref(roi_size, k=6.1)
-
-filename = filenames[90]
-
 track = []
 for f in filenames:
     im = np.sum(Image.open(f), axis=2)
