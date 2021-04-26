@@ -96,10 +96,10 @@ beads = []
 beads.append([395, 530])
 beads.append([607, 668])
 beads.append([280, 510])
-beads = np.asarray(beads)+10
+beads = np.asarray(beads)+5
 
 beadnr = 1
-filenr = 170
+filenr = 100
 
 # im = np.sum(Image.open(filenames[170]), axis=2)
 # roi = get_roi(im, to_corners(beads[beadnr], [roi_size, roi_size]))
